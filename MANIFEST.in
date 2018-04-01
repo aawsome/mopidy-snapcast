@@ -1,0 +1,7 @@
+include LICENSE
+include MANIFEST.in
+include README.rst
+include README.md
+include mopidy_snapcast/ext.conf
+
+recursive-include *.py
