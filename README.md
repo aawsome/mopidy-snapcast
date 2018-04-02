@@ -1,7 +1,7 @@
 Snapcast Mopidy Extension
 =========================
 
-This [Mopdidy] (https://www.mopidy.com) Extension adds support for [Snapcast] (https://github.com/badaix/snapcast/).
+This [Mopdidy](https://www.mopidy.com) Extension adds support for [Snapcast](https://github.com/badaix/snapcast/).
 
 Currently a mixer 'snapcast' is implemented which uses the Snapcast JSON-RPC to control volume of a snapcast group.
 In the group only activated and unmuted clients are taken into account.
@@ -22,7 +22,7 @@ The extension is enabled by default.
 Snapcast Server 
 
 Examples:
-# Use snapcast group with ID 'abc' of snapcastserver 'snapserver.local' on port 1234:
+### Use snapcast group with ID 'abc' of snapcastserver 'snapserver.local' on port 1234:
     
     [audio]
     mixer = snapcast
@@ -32,7 +32,7 @@ Examples:
     host = snapserver.local
     port = 1234
 
-# Use snapcast server on localhost:1705 and automatically detect group from stream connected to output:
+### Use snapcast server on localhost:1705 and automatically detect group from stream connected to output:
    
     [audio]
     mixer = snapcast
@@ -43,6 +43,6 @@ Examples:
 
 Changelog
 ---------
-v0.1 (2018-04-02):
+### v0.1 (2018-04-02):
 - Initial release
 
