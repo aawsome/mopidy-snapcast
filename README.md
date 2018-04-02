@@ -19,7 +19,7 @@ PyPi distribution is coming soon...
 Configuration
 -------------
 The extension is enabled by default.
-Snapcast Server 
+Snapcast Server hostname/port and group ID can be given as config options.
 
 Examples:
 ### Use snapcast group with ID 'abc' of snapcastserver 'snapserver.local' on port 1234:
@@ -31,6 +31,7 @@ Examples:
     enabled = true
     host = snapserver.local
     port = 1234
+    group_id = abc
 
 ### Use snapcast server on localhost:1705 and automatically detect group from stream connected to output:
    
@@ -53,7 +54,7 @@ Roadmap
 -------
 - [ ] **PyPI distribution** Spread the module on PyPI
 - [ ] **tests and error handling** Do more tests and implement better error handling
-- [ ] **Clients in group** Make decission of clients (avtivated / muted) a config option
+- [ ] **Clients in group** Make decission of clients (activated / muted) a config option
 - [ ] **Python 3** Use as soon as Mopidy runs on Python 3, use [python-snapcast](https://github.com/happyleavesaoc/python-snapcast)
 - [ ] **Snapcast group volume** Maybe use a snapcast group volume if it is supported in future, see [snapcast issue 376](https://github.com/badaix/snapcast/issues/376)
 
