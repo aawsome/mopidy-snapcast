@@ -1,7 +1,7 @@
 Snapcast Mopidy Extension
 =========================
 
-This [Mopdidy](https://www.mopidy.com) Extension adds support for [Snapcast](https://github.com/badaix/snapcast/).
+This [Mopidy](https://www.mopidy.com) Extension adds support for [Snapcast](https://github.com/badaix/snapcast/).
 
 Currently a mixer 'snapcast' is implemented which uses the Snapcast JSON-RPC to control volume of a snapcast group.
 
@@ -54,8 +54,8 @@ Roadmap
 -------
 - [ ] **PyPI distribution** Spread the module on PyPI
 - [ ] **tests and error handling** Do more tests and implement better error handling
-- [ ] **Clients in group** Make decission of clients (activated / muted) a config option
-- [ ] **Python 3** Use as soon as Mopidy runs on Python 3, use [python-snapcast](https://github.com/happyleavesaoc/python-snapcast)
+- [ ] **Clients in group** Make decission of clients (connected / muted) a config option
+- [ ] **Python 3** As soon as Mopidy runs on Python 3, use [python-snapcast](https://github.com/happyleavesaoc/python-snapcast)
 - [ ] **Snapcast group volume** Maybe use a snapcast group volume if it is supported in future, see [snapcast issue 376](https://github.com/badaix/snapcast/issues/376)
 
 Changelog
