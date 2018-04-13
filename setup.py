@@ -19,7 +19,7 @@ setup(
     author='Alexander Weiss',
     author_email='alex@weissfam.de',
     description='Mopidy extension for snapcast',
-    long_description=open('README.rst').read(),
+    long_description=open('README.md').read(),
     packages=find_packages(exclude=['tests', 'tests.*']),
     zip_safe=False,
     include_package_data=True,
