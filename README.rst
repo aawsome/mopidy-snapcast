@@ -1,7 +1,7 @@
 Snapcast Mopidy Extension
 =========================
 
-This [Mopdidy] (https://www.mopidy.com) Extension adds support for [Snapcast] (https://github.com/badaix/snapcast/).
+This [Mopidy] (https://www.mopidy.com) Extension adds support for [Snapcast] (https://github.com/badaix/snapcast/).
 
 Currently a mixer 'snapcast' is implemented which uses the Snapcast JSON-RPC to control volume of a snapcast group.
 In the group only activated and unmuted clients are taken into account.
