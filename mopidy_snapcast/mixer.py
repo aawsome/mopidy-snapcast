@@ -8,6 +8,18 @@ import pykka
 
 from snapcast_socket import snapcast
 
+VOLUME_METHODS = [
+"Client.OnConnect",
+"Client.OnDisconnect",
+"Client.OnVolumeChanged",
+"Server.OnUpdate",
+]
+
+MUTE_METHODS = [
+"Group.OnMute",
+"Server.OnUpdate",
+]
+
 class SnapcastMixer(pykka.ThreadingActor, mixer.Mixer):
 
     name = 'snapcast'
@@ -43,9 +55,19 @@ class SnapcastMixer(pykka.ThreadingActor, mixer.Mixer):
         else:
           self._snap.UnmuteGroup(self.group)
 
+    def message_handler(self, method, jsonrpc, params):
+        if method in VOLUME_METHODS:
+	  self.trigger_volume_changed(self.get_volume())
+        
+	if method in MUTE_METHODS:
+	  self.trigger_mute_changed(self.get_mute())
+
     def on_start(self):
-        self._snap = snapcast(self.host, self.port)
+        self._snap = snapcast(self.host, self.port, self.message_handler)
         if not self.group:
            # Get group from audio path 
            self.group = self._snap.GroupFromPath(self.path)
 
+    def on_stop(self):
+        self._snap.stop()
+        self._snap = None
