@@ -47,6 +47,7 @@ v0.2 (2018-04-19):
 - fixed pip problem
 - changed logic in snapcast-socket.py, now also events are considered;
 - changes in snapcast are now distributed as Mopidy events, e.g. volume changes
+
 v0.1 (2018-04-02):
 - Initial release
 
