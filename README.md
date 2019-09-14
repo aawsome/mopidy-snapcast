@@ -12,9 +12,10 @@ Installation
 To install:
 
     git clone https://github.com/aawsome/mopidy-snapcast.git
+    cd mopidy-snapcast
     sudo pip install .
 
-PyPi distribution is coming soon...
+PyPi distribution is coming soon…
 
 Configuration
 -------------
